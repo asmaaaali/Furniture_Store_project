@@ -1,0 +1,24 @@
+
+.thankyou-page img
+{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.thankyou-page h2
+{
+    font-size: 1.5rem;
+    color: var(--surface-800);
+    margin-bottom: 1.5rem;
+}
+
+/* .thankyou-page h2
+{
+    color: #ff3a00;
+} */
+
+.thankyou-page h3
+{
+    color: green;
+    font-size: 1rem;
+}

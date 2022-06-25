@@ -1,0 +1,53 @@
+<p-toast></p-toast>
+<p-confirmPopup></p-confirmPopup>
+
+<div class="admin-page">
+    <p-card header="Orders" subheader="List Of All Orders">
+        <div class="grid">
+            <div class="col-12">
+                <p-table [value]="orders" styleClass="p-datatable-gridlines" responsiveLayout="scroll">
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th pSortableColumn="name">User <p-sortIcon field="name"></p-sortIcon></th>
+                            <th pSortableColumn="totalPrice">Total Price <p-sortIcon field="totalPrice"></p-sortIcon></th>
+                            <th pSortableColumn="dateOrdered">Date Ordered <p-sortIcon field="dateOrdered"></p-sortIcon></th>
+                            <th pSortableColumn="Status">Status <p-sortIcon field="Status"></p-sortIcon></th>
+                            <th></th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-order>
+                        <tr>
+                            <td>{{order.user?.name}}</td>
+                            <td>{{order.totalPrice}}</td>
+                            <td>{{order.dateOrdered | date: 'short'}}</td>
+                            <td> 
+                                <p-tag 
+                                    [value]="orderStatus[order.status].label"
+                                    severity ="{{orderStatus[order.status].color}}"
+                                ></p-tag> 
+                            </td> 
+                            <td>
+                                <button 
+                                    pButton 
+                                    type="button" 
+                                    class="p-button-danger mr-2"  
+                                    icon="pi pi-trash"
+                                    (click)="confirmDelete($event,order._id)"
+                                    
+                                ></button>
+                                <button 
+                                    pButton 
+                                    type="button" 
+                                    class="p-button-success" 
+                                    icon="pi pi-eye" 
+                                    (click)="showOrder(order._id)"                              
+                                ></button>
+                            </td>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </div>
+        </div>
+    </p-card>
+</div>
+

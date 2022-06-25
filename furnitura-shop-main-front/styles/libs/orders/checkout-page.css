@@ -1,0 +1,61 @@
+
+.checkout-page
+{
+    margin-top: 5vh;
+}
+/* 
+.backToCart
+{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.backToCart span
+{
+    font-size: 0.9rem;
+    margin-bottom: 0.35rem;
+    height: 10px;
+} */
+
+.btn-backToCart
+{
+    margin-left: 1rem;
+}
+
+.checkout-page
+{
+    min-height: 50vh;
+}
+
+.checkout-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-conatiner
+{
+    padding-top: 2vh;
+}
+
+.checkout-container .order-summary
+{
+    margin-bottom: 8.8rem;
+}
+
+.form-conatiner .field
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.btn-placeOrder button
+{
+    transform: translateY(-25px);
+    width: 100%;
+}
+

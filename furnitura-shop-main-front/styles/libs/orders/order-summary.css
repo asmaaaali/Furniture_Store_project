@@ -1,0 +1,59 @@
+orders-order-summary
+{
+    width: 100%;
+}
+.order-summary
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: center;
+    row-gap: 1rem;
+    background-color: var(--surface-0);
+    border: 1px solid var(--surface-200);
+    transform: translateY(12vh);
+    width: 100% !important;
+    padding: 1rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+}
+
+.summary-price
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+}
+
+.to-checkout
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end !important;
+    row-gap: 1.5rem;
+}
+
+p-button button
+{
+    height: 35px;
+}
+p-button span
+{
+    font-size: 0.9rem;
+}
+
+.free
+{
+    color: green;
+}
+
+.order-summary small
+{
+    align-self: center;
+    color: #ff3a00;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 10px;
+}

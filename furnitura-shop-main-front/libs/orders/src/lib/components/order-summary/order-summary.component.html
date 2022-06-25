@@ -1,0 +1,23 @@
+
+<div class="order-summary">
+    <h3 class="mb-2">Order Summary</h3>
+    <div class="summary-price">
+        <span>Item Price</span>
+        <span>{{ totalPrice | currency}}</span>
+    </div>
+    <div class="summary-price">
+        <span>Packing & Shipping</span>
+        <span class="free">Free</span>
+    </div>
+    <div class="to-checkout">
+        <div class="summary-price">
+            <span>Total Price</span>
+            <span>{{ totalPrice | currency}}</span>
+        </div>
+        <div class="checkout-button" *ngIf="!isCheckout">
+            <p-button label="checkout" (onClick)="navigateToCheckout()"></p-button>
+        </div>
+    </div>
+    <small *ngIf="isCartEmpty && isCheckoutBtnPressed">Sorry, Cant checkout without products</small>
+    
+</div>

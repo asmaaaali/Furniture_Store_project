@@ -1,0 +1,55 @@
+
+<div class="cart-page">
+    <div class="grid">
+        <div class="col-8 w-100 flex flex-column">
+            <div class="cart-info col-12">
+                <p-button 
+                    label="Continue Shopping" 
+                    icon="pi pi-arrow-left"
+                    class="btn-continue-shopping"
+                    (onClick)="backToShop()"
+                ></p-button>
+                <h3>My Cart : {{cartCount}} Item(s)</h3>
+                <h4 class="shipping-info">
+                    Shipping After the Payment, Delivery time : 1 to 4 Working Days
+                </h4>
+            </div>
+            <div class="card-items" *ngIf="cartItemsDetailed">
+                <div class="col-12 grid card-item p-fluid" *ngFor="let cartItem of cartItemsDetailed">
+                    <div class="col-2 card-item-image">
+                        <!-- <img src="assets/images/fur-2.png" alt=""> -->
+                        <img [src]="cartItem.product.image" alt="">
+                    </div>
+                    <div class="col-7 cart-item-info">
+                        <h3>{{cartItem.product.name}}</h3>
+                        <h4>{{cartItem.product.price | currency}}</h4>
+                        <p-button 
+                            icon="pi pi-trash"
+                            (onClick)="deleteCartItem(cartItem)"
+                            class="btnDeleteItem"
+                        ></p-button>
+                    </div>
+                    <div class="col-3 cart-item-quantity">
+                        <p-inputNumber  
+                            mode="decimal"
+                            [showButtons]="true"
+                            [inputId]="cartItem.product._id"
+                            [min]="1"
+                            [max]="100"
+                            [style]="{'height':'35px'}"
+                            [(ngModel)]="cartItem.quantity"
+                            (onInput)="updateCardItemQuantity($event, cartItem)"
+                        ></p-inputNumber>
+                        <div class="item-subtotal">
+                            <h4>Sub Total : </h4>
+                            <span class="card-item-subtotal-value">{{ cartItem.product.price * cartItem.quantity | currency}}</span>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <orders-order-summary></orders-order-summary>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,137 @@
+
+/* LOGIN */
+.login-register
+{
+    background-image: linear-gradient(235deg, #565867, #191a25);
+    height: 100vh;
+    
+}
+
+.login-register-panel
+{
+    height: 525px;
+    width: 650px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 1rem;
+}
+
+.email-login-container,
+.pass-login-container
+{
+    min-height: 80px;
+    width: 100%;
+}
+
+/* Shop Login */
+.shop-container .login-register
+{
+    height: 88vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.shop-container .login-register .login-register-panel
+{
+    height: 525px;
+    width: 650px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 1rem;
+}
+
+.shop-container .login-register .login-register-panel div
+{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.shop-container .login-register .login-register-panel p-image
+{
+    /* height: 525px !important; */
+    height: 100% !important;
+}
+
+.right-part-login
+{
+    justify-content: flex-start !important;
+    padding-top: 30px !important;
+}
+
+.right-part-login .login-page-text
+{
+    margin-bottom: 40px !important;
+}
+
+.right-part-login form
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin-top: 30px;
+}
+
+.right-part-login form .email-pass-container
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.right-part-login .email-login-container,
+.right-part-login .pass-login-container
+{
+    height: 40px !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    padding: 0;
+    margin: 0;
+}
+
+.right-part-login .email-login-container .p-inputtext,
+.right-part-login .pass-login-container .p-inputtext
+{
+    height: 41.5px !important;
+}
+
+.right-part-login .btn-login-submit
+{
+    height: 40px !important;
+}
+
+.right-part-login .auth-message-error
+{
+    height: 20px !important;
+}
+
+
+
+/* REGISTERATION */
+
+.register-page
+{
+    margin-top: 3vh;
+}
+
+.register-page .field
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+
+.register-page .p-button
+{
+    margin-top: 1rem;
+    width: 100%;
+}

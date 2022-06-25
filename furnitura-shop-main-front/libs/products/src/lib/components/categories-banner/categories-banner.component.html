@@ -1,0 +1,20 @@
+
+<div class="categories-banner">
+    <h2>Categries</h2>
+    <div class="grid" *ngIf="categories">
+        <div class="col-2" *ngFor="let category of categories" >
+            <div 
+                class="category" 
+                [routerLink]="'/categories/'+ category._id"
+                [ngStyle]="{backgroundColor: category.color}"
+            >
+                <!-- <div class="categoty-icon">
+                    <i class="pi pi-check"></i>
+                </div> -->
+                <div class="category-name">
+                    <h5>{{category.name}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

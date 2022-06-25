@@ -1,0 +1,27 @@
+
+.featured-products
+{
+    min-height: 25vh;
+    padding: 0.5vh;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
+.featured-products h2
+{
+    color : var(--surface-500);
+    height: 25%;
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.2rem;
+}
+
+.featured-products .grid
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 75%; */
+}

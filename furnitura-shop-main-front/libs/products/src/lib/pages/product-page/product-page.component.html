@@ -1,0 +1,59 @@
+
+
+<div class="product-page">
+    <div class="grid" *ngIf="product">
+        <div class="col-6 image-container">
+            <!-- <ui-gallery></ui-gallery> -->
+            <img [src]="product.image" alt="Product Image">
+            <!-- <img [src]="'assets/images/fur-2.png'" alt=""> -->
+        </div>
+        <div class="col-6 product">
+            <h2>{{product.name}}</h2>
+            <p class="product-desc">
+                {{product.description}}
+            </p>
+            <div class="product-rating mt-2">
+                <p-rating 
+                    [(ngModel)]="product.rating" 
+                    disabled="true" 
+                    [cancel]="false"
+                ></p-rating>
+            </div>
+            <div class="product-price mt-2 mb-2">
+                {{product.price | currency}}
+                <span class="price-before">{{product.price + 200 | currency}}</span>
+            </div>
+            <div class="field col-12 md:col-3 product-quantity">
+                <label for="quantity">Quantity</label>
+                <p-inputNumber 
+                    [(ngModel)]="quantity" 
+                    mode="decimal" 
+                    [showButtons]="true" 
+                    inputId="quantity" 
+                    [min]="1" 
+                    [max]="100"
+                >
+                </p-inputNumber>
+            </div>
+            <div class="product-action mt-2">
+                <p-button 
+                styleClass=" mt-2 add-to-cart" 
+                label="Buy Now"
+                routerLink="/cart"
+                ></p-button>
+                <p-button 
+                styleClass=" mt-2 add-to-cart" 
+                label="Add To Cart"
+                icon="pi pi-shopping-cart" 
+                (click) = addProductToCart()
+                ></p-button>
+            </div>
+            
+        </div>
+    </div>
+    <!-- <div class="gid product-rich-desc mt-5 p-3">
+        <div class="col-12">
+            <div [innerHTML]="product.richDescription" ></div>
+        </div>
+    </div> -->
+</div>

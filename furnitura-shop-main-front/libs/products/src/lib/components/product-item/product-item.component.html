@@ -1,0 +1,17 @@
+
+<div class="product-item" *ngIf="product">
+    <div class="product-item-wrpapper">
+        <img [routerLink]="'/products/'+product._id" [src]="product.image" class="image" alt="">
+        <!-- <img [routerLink]="'/products/'+product._id" [src]="'assets/images/fur-2.png'" class="image" alt=""> -->
+        <h4 class="product-name text-center">{{product.name}}</h4>
+        <h5 class="product-price text-center">{{product.price | currency}}</h5>
+        <!-- <h6>{{product.category?.name}}</h6> -->
+        <p-button 
+            styleClass=" mt-2 add-to-cart" 
+            label="Add To Cart"
+            icon="pi pi-shopping-cart" 
+            (click) = addProductToCart()
+        ></p-button>
+    </div>
+</div>
+

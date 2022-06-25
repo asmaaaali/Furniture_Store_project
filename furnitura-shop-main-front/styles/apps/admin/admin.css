@@ -1,0 +1,39 @@
+/* Base */
+@import '~normalize.css/normalize.css';
+
+@import '../../base/colors.css';
+@import '../../base/fonts.css';
+
+
+/* PrimeNG */
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/lara-light-blue/theme.css';
+@import '~primeng/resources/primeng.min.css';
+/* PrimeFlex */
+@import '~primeflex/primeflex.css';
+
+@import '../../base/configuartion.css';
+
+/* Libs */
+@import '../../libs/ui/ui.css';
+
+/* Pages */
+@import './pages/dashboard.css';
+
+@import './shared/shell.css';
+@import './shared/sidebar.css';
+
+@import './pages/categories/categories-list.css';
+@import './pages/categories/categories-form.css';
+
+@import './pages/products/product-list.css';
+@import './pages/products/product-form.css';
+
+@import './pages/users/user-form.css';
+@import './pages/users/user-list.css';
+
+@import './pages/orders/orders-list.css';
+@import './pages/orders/orders-detail.css';
+
+/*Libs*/
+@import '../../libs/users/users.css'

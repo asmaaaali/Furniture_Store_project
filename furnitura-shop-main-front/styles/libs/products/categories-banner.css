@@ -1,0 +1,43 @@
+
+.categories-banner
+{
+    height: 20vh;
+    margin-top: 5vh;
+    border-radius: 0.5rem;
+    padding: 1vh;
+    transform: translateY(-3vh);
+}
+
+.categories-banner h2
+{
+    color : var(--surface-500);
+    height: 25%;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.category
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    width: 95%;
+    height: 75% !important;
+    font-size: 1.2rem;
+    background-color: #a3cee4;
+    cursor: pointer;
+}
+
+.category i
+{
+    font-size: 1.5rem;
+}
+
+.category-name
+{
+    font-size: 1.5rem;
+    color: var(--surface-300);
+}

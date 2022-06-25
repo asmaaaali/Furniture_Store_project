@@ -1,0 +1,32 @@
+.product-search
+{
+    background-color: var(--surface-200);
+    display: none;
+    padding: 2px;
+    height: 6vh !important;
+    width: 20vw !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.product-search input
+{
+    height: 85%;
+    width: 80%;
+    padding: 2px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--surface-600);
+    font-size: 1rem;
+}
+
+.product-search i
+{
+    color: red;
+    font-size: 1.2rem;
+    cursor: pointer;
+}

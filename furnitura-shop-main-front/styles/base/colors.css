@@ -1,0 +1,11 @@
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --primary-color: #354bc7; 
+}
+
+.color-red
+{
+    color: var(--primary-color);
+}

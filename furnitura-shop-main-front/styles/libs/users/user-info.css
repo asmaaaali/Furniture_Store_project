@@ -1,0 +1,55 @@
+/* 
+.user-info
+{
+
+}*/
+
+.user-info i,
+.user-icon-logout a
+{
+    transform: translateX(-10px);
+}
+.user-icon-logout a
+{
+    cursor: pointer;
+}
+
+.user-info .grid
+{
+    width: 150%;
+    transform: translate(-20px,5px);
+}
+
+
+.user-info .user-name
+{
+    color: var(--surface-700);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.user-info .user-name:hover
+{
+    color: #ff3a00;
+    cursor: pointer;
+}
+
+.user-info a
+{
+    color: var(--surface-700);
+}
+
+.user-icon-logout
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    row-gap: 0.3rem;
+}
+
+.user-icon-logout a:hover
+{
+    color: #ff3a00;
+}

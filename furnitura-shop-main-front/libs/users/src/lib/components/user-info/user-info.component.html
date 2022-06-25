@@ -1,0 +1,23 @@
+<div class="user-info-container grid">
+    
+    <div class="user-name col-8" *ngIf="user">
+        <h4>{{user?.name}}</h4>
+    </div>
+    <div class="user-name col-8" *ngIf="!user">
+        <a routerLink="/login">Login</a>
+    </div>
+
+    <div class="user-icon-logout col-3">
+        <i 
+            class="pi pi-user p-text-secondary" 
+            style="font-size: 1.6rem"
+        ></i>
+        <a
+            *ngIf="user" 
+            style="font-size: 0.9rem;" 
+            (click)="logout()"
+        >logout</a>
+    </div>
+    <!-- [style]="{'cursor': 'pointer'}" -->
+
+</div>
